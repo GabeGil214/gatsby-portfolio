@@ -75,7 +75,7 @@ function Projects(props) {
                   decks and flashcards right on your phone!
                 </p>
                 <ProjectBtn size="small" variant="contained" href="https://github.com/GabeGil214/creative-coding/" rel="noopener noreferrer" target="_blank">View on Github<i class="fab fa-github"></i></ProjectBtn>
-                <ProjectBtn size="small" variant="contained" href="https://gabegil214.github.io/creative-coding/">Live Site</ProjectBtn>
+                <ProjectBtn size="small" variant="contained" href="https://sparkling-bombolone-89bb53.netlify.app/">Live Site</ProjectBtn>
               </div>
             </div>
           </Grid>
