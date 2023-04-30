@@ -67,29 +67,14 @@ function Projects(props) {
 
           <Grid item xs={12}>
             <div className={classes.projectTile}>
-              <i className={`fas fa-university ${classes.projectIcon}`}></i>
+              <i className={`fas fa-glasses ${classes.projectIcon}`}></i>
               <h2>Music Visualizer</h2>
               <div className={classes.tile}>
                 <p>
-                  Got an exam coming up? Brush up and quiz yourself using customized
-                  decks and flashcards right on your phone!
+                  Visualizer that responds in real time to the sounds through your microphone or to a preset mp3 file. Take a look and enjoy the various color options!
                 </p>
                 <ProjectBtn size="small" variant="contained" href="https://github.com/GabeGil214/creative-coding/" rel="noopener noreferrer" target="_blank">View on Github<i class="fab fa-github"></i></ProjectBtn>
-                <ProjectBtn size="small" variant="contained" href="https://sparkling-bombolone-89bb53.netlify.app/">Live Site</ProjectBtn>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={12}>
-            <div className={classes.projectTile}>
-              <i className={`far fa-question-circle ${classes.projectIcon}`}></i>
-              <h2>Would You Rather?</h2>
-              <div className={classes.tile}>
-                <p>
-                  Would you rather have the ability to fly or have telekenesis?
-                  Vote and compare your answer with others!
-                </p>
-                <ProjectBtn size="small" variant="contained" href="https://www.github.com/Gabegil214/would-you-rather-" rel="noopener noreferrer" target="_blank">View on Github<i class="fab fa-github"></i></ProjectBtn>
-                <ProjectBtn size="small" variant="contained" href="/visualizer.html">Live Demo</ProjectBtn>
+                <ProjectBtn size="small" variant="contained" href="https://visualizer.gabegil.dev">Live Site</ProjectBtn>
               </div>
             </div>
           </Grid>
