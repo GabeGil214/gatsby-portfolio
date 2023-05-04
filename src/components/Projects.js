@@ -1,52 +1,15 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import PropTypes from 'prop-types';
-import useStyles from '@assets/styles.js';
-import Grid from '@material-ui/core/Grid';
 
-
-function Projects(props) {
-  const { value, index, ...other } = props;
-  const classes = useStyles();
-  const ProjectBtn = withStyles({
-    root: {
-      color: '#333',
-      backgroundColor: 'white',
-      margin: '10px auto',
-      display: 'block',
-      width: 'fit-content',
-    },
-    '&:hover': {
-      backgroundColor: '#ddd',
-    }
-  })(Button)
+function Projects() {
 
   return (
-    <Grid
-      container
-      sm={12}
-      alignItems="center"
-      className={classes.container}
-      component="div"
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-      >
-      <Grid item xs={12} lg={8} centered className={`${classes.space} projects-container`}>
-        <h1 className={classes.title}>Projects</h1>
-        <Grid
-          container
-          direction="column"
-          justify="space-around"
-          >
-          <Grid item xs={12} >
-            <div className={classes.projectTile}>
-              <i className={`fas fa-music ${classes.projectIcon}`}></i>
+      <section id="projects">
+        <h1>Projects</h1>
+        <div className="row">
+          <div className="project">
+              <i className="fas fa-music"></i>
               <h2>My Custom Playlist</h2>
-              <div className={classes.tile}>
+              <div>
                   <img
                     className="vidyard-player-embed"
                     src="https://play.vidyard.com/a4pUQ3TSbsQKAjzrWJUoX9.jpg"
@@ -59,34 +22,25 @@ function Projects(props) {
                   Select your favorite artist, choose your musical preferences, and let Spotify create a
                   custom playlist made just for you!
                 </p>
-                <ProjectBtn size="small" variant="contained" href="https://github.com/GabeGil214/my-playlist" rel="noopener noreferrer" target="_blank">View on Github<i class="fab fa-github"></i></ProjectBtn>
-                <ProjectBtn size="small" variant="contained" href="https://mypersonalizedplaylist.com/">Live Site</ProjectBtn>
+                <a href="https://github.com/GabeGil214/my-playlist" rel="noopener noreferrer" target="_blank">View on Github<i className="fab fa-github"></i></a>
+                <a size="small" variant="contained" href="https://mypersonalizedplaylist.com/">Live Site</a>
               </div>
             </div>
-          </Grid>
 
-          <Grid item xs={12}>
-            <div className={classes.projectTile}>
-              <i className={`fas fa-glasses ${classes.projectIcon}`}></i>
+            <div className="project">
+              <i className="fas fa-glasses"></i>
               <h2>Music Visualizer</h2>
-              <div className={classes.tile}>
+              <div>
                 <p>
                   Visualizer that responds in real time to the sounds through your microphone or to a preset mp3 file. Take a look and enjoy the various color options!
                 </p>
-                <ProjectBtn size="small" variant="contained" href="https://github.com/GabeGil214/creative-coding/" rel="noopener noreferrer" target="_blank">View on Github<i class="fab fa-github"></i></ProjectBtn>
-                <ProjectBtn size="small" variant="contained" href="https://visualizer.gabegil.dev">Live Site</ProjectBtn>
+                <a href="https://github.com/GabeGil214/creative-coding/" rel="noopener noreferrer" target="_blank">View on Github<i className="fab fa-github"></i></a>
+                <a href="https://visualizer.gabegil.dev">Live Site</a>
               </div>
             </div>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
+        </div>
+      </section>
   )
-}
-
-Projects.propTypes = {
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired
 }
 
 export default Projects;

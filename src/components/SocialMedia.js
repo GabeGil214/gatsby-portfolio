@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import Icon from '@material-ui/core/Icon'
-import useStyles from '@assets/styles.js'
 import { loadCSS } from 'fg-loadcss'
 
 function SocialMedia() {
@@ -11,17 +9,17 @@ function SocialMedia() {
   }, [])
 
   return (
-    <React.Fragment>
+    <div className="social-media">
       <div className={classes.icon}>
-        <a target="_blank" rel="noopener noreferrer" href="mailto:gilgabe214@live.com"><Icon className="fas fa-envelope"></Icon></a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:gilgabe214@live.com"><i className="fas fa-envelope"></i></a>
       </div>
       <div className={classes.icon}>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/gabegil214"><Icon className="fab fa-github"></Icon></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/gabegil214"><i className="fab fa-github"></i></a>
       </div>
       <div className={classes.icon}>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabegil214"><Icon className="fab fa-linkedin"></Icon></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabegil214"><i className="fab fa-linkedin"></i></a>
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 
