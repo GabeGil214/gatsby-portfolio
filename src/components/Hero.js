@@ -1,16 +1,24 @@
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import React from 'react'
 import useStyles from '@assets/styles.js'
+import { StaticImage } from "gatsby-plugin-image"
 
-function Hero(props){
-  const classes = useStyles();
+
+function Hero(){
+  const classes = useStyles()
 
   return (
       <section id="hero">
-        <h1 className={classes.name}><span>Hi, I'm</span> Gabe Gil</h1>
-        <Typography variant="p" className={classes.textRight}>React Web Developer</Typography>
+        <div className="container">
+          <div className="img-holder">
+            <StaticImage src="../images/htmlcssjs.png" alt="HTML/CSS/JS Logo" />
+          </div>
+          <div className="text-holder">
+            <h1 className={classes.name}><span>Hi, I'm</span> Gabe Gil</h1>
+            <p className={classes.textRight}>React Web Developer</p>
+          </div>
+        </div>
       </section>
   )
 }
 
-export default Hero;
+export default Hero

@@ -1,0 +1,100 @@
+/*----------------
+GLOBAL VARIABLES
+-----------------*/
+
+$gabe-primary: #8749f3;
+$gabe-primary-dark: #5c2fab;
+
+$gabe-dark: #3f3f3f;
+$gabe-darker: #1a1a1a;
+
+$gabe-light: #ededed;
+
+$header-font: 'Raleway', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+$padding-lg: 7rem;
+$padding-md: 5rem;
+$padding-sm: 3rem;
+
+$icon-size: 100px;
+
+/*-------------------
+DEFAULTS
+-------------------*/
+
+section {
+    padding: $padding-lg {
+        left: 0;
+        right: 0;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    padding: $padding-sm;
+}
+
+
+/*----------------
+NAVBAR
+-----------------*/
+
+navbar {
+    width: 100%;
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        list-style: none;
+        padding: $padding-sm {
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.icon {
+    height: $icon-size;
+    width: $icon-size;
+    margin: 5px;
+    font-size: 1.5rem;
+    & > a {
+      color: white;
+    }
+}
+
+/*--------------
+HERO
+-------------*/
+
+#hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------
+ABOUT
+----------------*/
+
+#about {
+    text-align: center;
+}
+
+/*--------------
+PROJECTS
+--------------*/
+
+#projects {
+    text-align: center;
+}
+
+/*--------------
+TEMPLATES
+---------------*/
+
+#templates {
+    text-align: center;
+}

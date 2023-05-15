@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 function Templates(props){
 
   return (
       <section id="templates">
-        <h1><span>Hi, I'm</span> Gabe Gil</h1>
+        <div className="container">
+          <h1>WordPress Templates</h1>
+        </div>
       </section>
   )
 }

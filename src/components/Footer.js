@@ -1,13 +1,17 @@
-import React from 'react';
+import React from 'react'
+import SocialMedia from './SocialMedia'
+import Contact from './Contact'
 
-function Footer(props){
+function Footer(){
 
   return (
       <footer>
-        <SocialMedia />
-        <Contact />
+        <div className="container">
+          <SocialMedia />
+          <Contact />
+        </div>
       </footer>
   )
 }
 
-export default Footer;
+export default Footer

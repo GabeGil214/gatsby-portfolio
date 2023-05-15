@@ -1,19 +1,19 @@
 import * as React from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
-      <Navbar />
+    <>
       <header>
-        <Hero />
+        <Navbar />
       </header>
       <main>
         {children}
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
