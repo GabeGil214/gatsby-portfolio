@@ -9,6 +9,7 @@ function SocialMedia() {
 
   return (
     <div className="social-media">
+      <h2>Social Media</h2>
       <div className="icon">
         <a target="_blank" rel="noopener noreferrer" href="mailto:gilgabe214@live.com"><i className="fas fa-envelope"></i></a>
       </div>

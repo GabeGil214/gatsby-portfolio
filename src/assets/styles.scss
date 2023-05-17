@@ -33,8 +33,24 @@ section {
 .container {
     max-width: 1400px;
     padding: $padding-sm;
+    margin: 0 auto;
 }
 
+.row {
+    display: flex;
+}
+
+body.dark {
+    background: $gabe-darker;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a, ul, li {
+    font-family: 'Raleway', sans-serif;
+}
 
 /*----------------
 NAVBAR
@@ -52,6 +68,15 @@ navbar {
             top: 0;
             bottom: 0;
         }
+    }
+
+    a {
+        font-size: 1.25rem;
+        color: #1a1a1a;
+        font-weight: 500;
+        padding-bottom: 6px;
+        text-decoration: none;
+        border-bottom: 2px solid #1a1a1a;
     }
 }
 
@@ -97,4 +122,15 @@ TEMPLATES
 
 #templates {
     text-align: center;
+}
+
+.template {
+    padding: $padding-md;
+}
+
+.theme-img {
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    margin: 0 auto 3rem;
 }

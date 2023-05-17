@@ -7,8 +7,10 @@ function Footer(){
   return (
       <footer>
         <div className="container">
-          <SocialMedia />
-          <Contact />
+          <div className="row">
+            <SocialMedia />
+            <Contact />
+          </div>
         </div>
       </footer>
   )
