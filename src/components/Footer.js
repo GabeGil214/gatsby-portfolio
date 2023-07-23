@@ -1,6 +1,5 @@
 import React from 'react'
 import SocialMedia from './SocialMedia'
-import Contact from './Contact'
 
 function Footer(){
 
@@ -9,7 +8,6 @@ function Footer(){
         <div className="container">
           <div className="row">
             <SocialMedia />
-            <Contact />
           </div>
         </div>
       </footer>

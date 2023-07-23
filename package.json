@@ -16,6 +16,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/audiowide": "^5.0.5",
+    "@fontsource/playball": "^5.0.5",
     "@fontsource/raleway": "^4.5.12",
     "@fontsource/roboto": "^4.5.8",
     "fg-loadcss": "^3.1.0",

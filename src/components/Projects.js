@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from "gatsby-plugin-image"
 
 function Projects() {
 
@@ -11,32 +12,26 @@ function Projects() {
                 <i className="fas fa-music"></i>
                 <h2>My Custom Playlist</h2>
                 <div>
-                    <img
-                      className="vidyard-player-embed"
-                      src="https://play.vidyard.com/a4pUQ3TSbsQKAjzrWJUoX9.jpg"
-                      data-uuid="a4pUQ3TSbsQKAjzrWJUoX9"
-                      data-v="4"
-                      data-type="inline"
-                      alt="Video Thumbnail"
-                      />
+                  <StaticImage src="../images/playlist.jpg" alt="Product Page Wordpress Theme" />
                   <p>
                     Select your favorite artist, choose your musical preferences, and let Spotify create a
                     custom playlist made just for you!
                   </p>
-                  <a href="https://github.com/GabeGil214/my-playlist" rel="noopener noreferrer" target="_blank">View on Github<i className="fab fa-github"></i></a>
-                  <a size="small" variant="contained" href="https://mypersonalizedplaylist.com/">Live Site</a>
+                  <a class="btn-primary" href="https://github.com/GabeGil214/my-playlist" rel="noopener noreferrer" target="_blank">View on Github<i className="fab fa-github"></i></a>
+                  <a class="btn-primary" href="https://mypersonalizedplaylist.com/">Live Site</a>
                 </div>
               </div>
 
               <div className="project">
                 <i className="fas fa-glasses"></i>
-                <h2>Music Visualizer</h2>
+                <h2>Music Visualizer</h2>    
                 <div>
+                  <StaticImage src="../images/visualizer.webp" alt="Product Page Wordpress Theme" />
                   <p>
-                    Visualizer that responds in real time to the sounds through your microphone or to a preset mp3 file. Take a look and enjoy the various color options!
+                    Visualizer that responds in real time to the sounds through your microphone or to a preset mp3 file.
                   </p>
-                  <a href="https://github.com/GabeGil214/creative-coding/" rel="noopener noreferrer" target="_blank">View on Github<i className="fab fa-github"></i></a>
-                  <a href="https://visualizer.gabegil.dev">Live Site</a>
+                  <a class="btn-primary" href="https://github.com/GabeGil214/creative-coding/" rel="noopener noreferrer" target="_blank">View on Github<i className="fab fa-github"></i></a>
+                  <a class="btn-primary" href="https://visualizer.gabegil.dev">Live Site</a>
                 </div>
               </div>
           </div>

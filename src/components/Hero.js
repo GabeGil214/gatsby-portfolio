@@ -1,6 +1,4 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
-
 
 function Hero(){
 
@@ -8,8 +6,8 @@ function Hero(){
       <section id="hero">
         <div className="container">
           <div className="text-holder">
-            <h1><span>Hi, I'm</span> Gabe Gil</h1>
-            <p>React Web Developer</p>
+            <h1 class="hero-header">Hi, I'm Gabe Gil</h1>
+            <p class="hero-subtext">Front End Web Developer</p>
           </div>
         </div>
       </section>
